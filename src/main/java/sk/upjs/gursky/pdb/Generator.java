@@ -18,7 +18,7 @@ public class Generator {
 	/**
 	 * Vytvori subor so zadanym menom/umiestnenim a poctom stranok velkosti 4096B naplnenych nahodnymi datami.
 	 * Na jednu stranku sa vojde 85 zaznamov, menej zaznamov (ale nahodne) bude vzdy obsahovat posledna stranka.
-	 * Sobor obsahuje zaznamy pre tabulku podla tejto definicie
+	 * Subor obsahuje zaznamy pre tabulku podla tejto definicie
 	 * 
 	 * create table clovek (
 	 * 		meno char(10),

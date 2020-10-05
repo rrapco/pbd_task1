@@ -34,12 +34,16 @@ public class BPTreeTest {
         tree.setCacheCapacity(100);     //default is 10
         tree.openNewFile();
         for (int i = 0; i < 100; i++) {
-                tree.add(new BPObjectIntDouble((int)(Math.random()*1000000000),Math.random()));
+            tree.add(new BPObjectIntDouble((int)(Math.random()*1000000000),Math.random()));
         }
+        BPObjectIntDouble prev = null;
         for (BPObjectIntDouble entry : tree) {
-                System.out.println(entry);
+            System.out.println(entry);
+            if (prev != null) {
+            	assertTrue(prev.getKey().getKeyInt() < entry.getKey().getKeyInt());
+            }
+            prev = entry;
         }
-		assertTrue(true);
 	}
 
 }
