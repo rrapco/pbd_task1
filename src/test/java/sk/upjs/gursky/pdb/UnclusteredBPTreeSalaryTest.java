@@ -42,6 +42,7 @@ public class UnclusteredBPTreeSalaryTest {
         time = System.nanoTime() - time;
 
         System.out.println("Interval unclusetered: " + time/1_000_000.0 +" ms");
+        // vypis
         for (int i = 0; i < 500; i++) {
             System.out.println(result.get(i));
         }
